@@ -29,6 +29,5 @@ Este repositorio contiene:
 1. **Clona el repositorio**:
    ```bash
    cd tu-repositorio
-   git init
    git clone https://github.com/mathiasddf/ahorcado.git
    
