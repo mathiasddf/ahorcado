@@ -1,0 +1,70 @@
+/*FORMATO DEL HTML EN GENERAL*/
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+/*CONTENEDOR PRINCIPAL  DEL AHORCADO*/
+    .container {
+        text-align: center;
+    }
+/*LIENZO*/
+    canvas {
+        border: 1px solid #000;
+        margin-bottom: 20px;
+    }
+/*TECLADO DE LETRAS*/
+    /*TECLAS INDIVIDUALES*/
+    .tecla {
+        display: inline-block; /* Permite el alineamiento horizontal */
+        margin: 5px;
+        padding: 8px;
+        border: 1px solid #000;
+        cursor: pointer;
+        width: 25px;
+        height: 25px;
+
+        line-height: 25px;
+        font-size: 16px;
+    }
+    .tecla.disabled {
+        background-color: grey;
+        pointer-events: none; /* Deshabilitar doble interaccion */ 
+    }
+    /*TECLADO EN GENERAL*/
+    #teclado {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr); /* 8 teclas por fila */
+        gap: 5px;
+    }
+/*BUTTON REINICIO*/
+    #botonReiniciar {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #343a40; 
+        color: white;
+        border-radius: 5px; 
+        cursor: pointer;
+        font-size: 16px;
+    }
+    #botonReiniciar:hover {
+        background-color: #495057; 
+    }
+/*MENSAJE VICTORIA - DERROTA*/    
+    .mensaje-final {
+        position: fixed;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        background-color: rgba(255, 255, 255, 0.9); 
+        border: 2px solid #333;
+        border-radius: 10px; 
+        padding: 20px; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    }
+
+

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del Ahorcado</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Juego del Ahorcado</h1>
+        <canvas id="ahorcadoCanvas" width="200" height="200"></canvas>
+        <div>
+            <p>Palabra:</p>
+            <p id="palabra"></p>
+        </div>
+        <div id="teclado"></div>
+        <button id="botonReiniciar" onclick="reiniciarJuego()">Volver a Jugar</button>
+    </div>
+    <div id="mensajeFinal" class="mensaje-final"></div>
+
+    <script src="ahorcado.js"></script>
+
+</body>
+</html>
