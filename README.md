@@ -28,5 +28,5 @@ Este repositorio contiene:
 
 1. **Clona el repositorio**:
    ```bash
-   git clone https://github.com/TU_USUARIO/tu-repositorio.git
+   git clone https://github.com/mathiasddf/ahorcado.git
    cd tu-repositorio
